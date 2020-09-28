@@ -1051,3 +1051,1238 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.2ms | Allocations: 5396)
 
 
+Started GET "/" for ::1 at 2020-09-27 20:41:10 +0900
+  [1m[35m (2.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 375)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 95ms (Views: 59.3ms | ActiveRecord: 0.0ms | Allocations: 15411)
+
+
+Started GET "/" for ::1 at 2020-09-27 20:44:18 +0900
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 81)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.0ms | Allocations: 12949)
+
+
+  
+ActionView::Template::Error (The asset "application.js" is not present in the asset pipeline.
+):
+     7: 
+     8:     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha256-UzFD2WYH2U1dQpKDjjZK72VtPeWP50NoJjd26rnAdUI=" crossorigin="anonymous" />
+     9:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11:   </head>
+    12: 
+    13:   <body>
+  
+app/views/layouts/application.html.erb:10
+Started GET "/" for ::1 at 2020-09-27 20:45:25 +0900
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 5)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms | Allocations: 8716)
+
+
+  
+ActionView::Template::Error (The asset "application.js" is not present in the asset pipeline.
+):
+     7: 
+     8:     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha256-UzFD2WYH2U1dQpKDjjZK72VtPeWP50NoJjd26rnAdUI=" crossorigin="anonymous" />
+     9:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11:   </head>
+    12: 
+    13:   <body>
+  
+app/views/layouts/application.html.erb:10
+Started GET "/" for ::1 at 2020-09-27 20:46:04 +0900
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 81)
+Completed 500 Internal Server Error in 339ms (ActiveRecord: 0.0ms | Allocations: 191523)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `recipes_path' for #<#<Class:0x00007f87ac8f76c8>:0x00007f87ac8f4bd0>):
+    63:       <% else %>
+    64:         <div id="navbarExampleTransparentExample" class="navbar-menu">
+    65:           <div class="navbar-item">
+    66:             <%= link_to "レシピ一覧", recipes_path, class: "navbar-item button is-warning is-light" %>
+    67:           </div>
+    68:           <div class="navbar-item">
+    69:             <%= link_to "レシピグラマー一覧", users_path, class: "navbar-item button is-warning is-light" %>
+  
+app/views/layouts/application.html.erb:66
+Started GET "/" for ::1 at 2020-09-27 20:46:38 +0900
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 80)
+Completed 500 Internal Server Error in 295ms (ActiveRecord: 0.0ms | Allocations: 191499)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `recipes_path' for #<#<Class:0x00007f87a748d0b0>:0x00007f87a74977e0>):
+    63:       <% else %>
+    64:         <div id="navbarExampleTransparentExample" class="navbar-menu">
+    65:           <div class="navbar-item">
+    66:             <%= link_to "レシピ一覧", recipes_path, class: "navbar-item button is-warning is-light" %>
+    67:           </div>
+    68:           <div class="navbar-item">
+    69:             <%= link_to "レシピグラマー一覧", users_path, class: "navbar-item button is-warning is-light" %>
+  
+app/views/layouts/application.html.erb:66
+Started GET "/" for ::1 at 2020-09-27 20:47:14 +0900
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 80)
+Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.0ms | Allocations: 4029)
+
+
+Started GET "/" for ::1 at 2020-09-27 20:47:27 +0900
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 81)
+Completed 200 OK in 7ms (Views: 5.7ms | ActiveRecord: 0.0ms | Allocations: 4028)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-09-27 20:47:37 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.1ms | Allocations: 614)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 31.1ms | Allocations: 8474)
+Completed 200 OK in 48ms (Views: 35.3ms | ActiveRecord: 0.6ms | Allocations: 20864)
+
+
+Started POST "/users/sign_in" for ::1 at 2020-09-27 20:47:44 +0900
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"IO55cLQpsCWAFjtmezsoMw6k1hKnEx18c8+GphqXG/VSVBKsgm4sNGkCUByy3PLPNWmVA9dQ52HC6ljHh5LgCg==", "user"=>{"email"=>"test@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "test@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 238ms (ActiveRecord: 0.6ms | Allocations: 6284)
+
+
+Started GET "/" for ::1 at 2020-09-27 20:47:44 +0900
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:38
+Completed 500 Internal Server Error in 292ms (ActiveRecord: 0.2ms | Allocations: 191312)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `users_path' for #<#<Class:0x00007f87a806c570>:0x00007f87aca53f08>
+Did you mean?  user_session_path):
+    48:             <div class="navbar-item">
+    49:               <div class="field is-grouped">
+    50:                 <p class="control">
+    51:                   <%= link_to "レシピグラマー一覧", users_path, class: " button is-warning is-light" %>
+    52:                 </p>
+    53:                 <p class="control">
+    54:                   <%= link_to "マイページ", user_path(current_user), class: "button is-warning is-light" %>
+  
+app/views/layouts/application.html.erb:51
+Started GET "/" for ::1 at 2020-09-27 20:48:05 +0900
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 80)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:38
+Completed 500 Internal Server Error in 155ms (ActiveRecord: 0.2ms | Allocations: 100265)
+
+
+  
+ActionView::Template::Error (undefined method `user_path' for #<#<Class:0x00007f87a3feb640>:0x00007f87a3fe9db8>):
+    51:                   <%# <%= link_to "レシピグラマー一覧", users_path, class: " button is-warning is-light" %> %>
+    52:                 </p>
+    53:                 <p class="control">
+    54:                   <%= link_to "マイページ", user_path(current_user), class: "button is-warning is-light" %>
+    55:                 </p>
+    56:                 <p class="control">
+    57:                   <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "button is-warning is-light" %>
+  
+app/views/layouts/application.html.erb:54
+Started GET "/" for ::1 at 2020-09-27 20:48:18 +0900
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 80)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:38
+Completed 200 OK in 11ms (Views: 9.1ms | ActiveRecord: 0.2ms | Allocations: 4884)
+
+
+Started GET "/" for ::1 at 2020-09-27 20:49:24 +0900
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.0ms | Allocations: 3219)
+
+
+  
+ActionView::Template::Error (Error: media query expression must begin with '('
+        on line 18:1 of app/assets/stylesheets/application.scss
+>> .notification:not(:last-child) {
+
+   ^
+):
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha256-UzFD2WYH2U1dQpKDjjZK72VtPeWP50NoJjd26rnAdUI=" crossorigin="anonymous" />
+     9:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%# <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11:   </head>
+    12: 
+  
+app/assets/stylesheets/application.scss:18
+app/views/layouts/application.html.erb:9
+Started GET "/" for ::1 at 2020-09-27 20:50:27 +0900
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:38
+Completed 200 OK in 765ms (Views: 764.1ms | ActiveRecord: 0.1ms | Allocations: 132749)
+
+
+Started GET "/" for ::1 at 2020-09-27 20:55:59 +0900
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 409)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:38
+Completed 200 OK in 831ms (Views: 823.2ms | ActiveRecord: 1.4ms | Allocations: 157673)
+
+
+Started GET "/users/sign_out" for ::1 at 2020-09-27 20:56:02 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_out"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 89)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:38
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.1ms | Allocations: 4097)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-09-27 20:56:08 +0900
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.1ms | Allocations: 3711)
+
+
+Started GET "/" for ::1 at 2020-09-27 20:56:08 +0900
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 5)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:38
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.2ms | Allocations: 3358)
+
+
+Started GET "/" for ::1 at 2020-09-27 20:56:14 +0900
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 5)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:38
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.1ms | Allocations: 3333)
+
+
+Started GET "/users/new" for ::1 at 2020-09-27 20:56:25 +0900
+  
+AbstractController::ActionNotFound (The action 'new' could not be found for UsersController):
+  
+actionpack (6.0.3.3) lib/abstract_controller/base.rb:131:in `process'
+actionview (6.0.3.3) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.3.3) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.0.3.3) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.0.3.3) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.0.3.3) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.3.3) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.3) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.3) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.3) lib/action_dispatch/routing/route_set.rb:834:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.3.3) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.3) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.6) lib/puma/configuration.rb:228:in `call'
+puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.6) lib/puma/server.rb:472:in `process_client'
+puma (4.3.6) lib/puma/server.rb:328:in `block in run'
+puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/users/sign_up" for ::1 at 2020-09-27 20:56:36 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.1ms | Allocations: 2017)
+
+
+Started GET "/" for ::1 at 2020-09-27 20:56:36 +0900
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:38
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.2ms | Allocations: 3361)
+
+
+Started GET "/users/sign_out" for ::1 at 2020-09-27 20:56:40 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_out"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:38
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.1ms | Allocations: 3319)
+
+
+Started GET "/users/sign_up" for ::1 at 2020-09-27 20:56:49 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms | Allocations: 1856)
+
+
+Started GET "/" for ::1 at 2020-09-27 20:56:49 +0900
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:38
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.1ms | Allocations: 3347)
+
+
+Started GET "/" for ::1 at 2020-09-27 20:56:54 +0900
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:38
+Completed 200 OK in 5ms (Views: 4.7ms | ActiveRecord: 0.1ms | Allocations: 3310)
+
+
+Started GET "/users/sign_up" for ::1 at 2020-09-27 20:57:26 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms | Allocations: 1842)
+
+
+Started GET "/" for ::1 at 2020-09-27 20:57:26 +0900
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:38
+Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.1ms | Allocations: 3333)
+
+
+Started GET "/users/sign_out" for ::1 at 2020-09-27 20:57:29 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_out"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:38
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.1ms | Allocations: 3317)
+
+
+Started GET "/" for ::1 at 2020-09-27 20:58:20 +0900
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:38
+Completed 200 OK in 4ms (Views: 3.9ms | ActiveRecord: 0.1ms | Allocations: 3330)
+
+
+Started GET "/" for ::1 at 2020-09-27 20:59:56 +0900
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 329)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:38
+Completed 200 OK in 45ms (Views: 37.0ms | ActiveRecord: 1.0ms | Allocations: 20361)
+
+
+Started GET "/users/sign_out" for ::1 at 2020-09-27 20:59:59 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_out"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 84)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:38
+Completed 200 OK in 8ms (Views: 6.7ms | ActiveRecord: 0.1ms | Allocations: 4109)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-09-27 21:00:05 +0900
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 6ms (ActiveRecord: 0.1ms | Allocations: 3711)
+
+
+Started GET "/" for ::1 at 2020-09-27 21:00:05 +0900
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 5)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:38
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.1ms | Allocations: 3361)
+
+
+Started GET "/users/sign_out" for ::1 at 2020-09-27 21:00:42 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_out"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.0ms | Allocations: 5)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:38
+Completed 200 OK in 5ms (Views: 4.7ms | ActiveRecord: 0.1ms | Allocations: 3344)
+
+
+Started GET "/users/sign_out" for ::1 at 2020-09-27 21:00:44 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_out"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.0ms | Allocations: 5)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:38
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.1ms | Allocations: 3351)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-09-27 21:00:57 +0900
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms | Allocations: 1839)
+
+
+Started GET "/" for ::1 at 2020-09-27 21:00:57 +0900
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:38
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.1ms | Allocations: 3352)
+
+
+Started GET "/" for ::1 at 2020-09-27 21:01:10 +0900
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:38
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.3ms | Allocations: 3323)
+
+
+Started GET "/users" for ::1 at 2020-09-27 21:01:36 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:4
+  Rendered users/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 917)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:38
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.3ms | Allocations: 4409)
+
+
+Started GET "/users" for ::1 at 2020-09-27 21:02:51 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:4
+  Rendered users/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 753)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:38
+Completed 200 OK in 11ms (Views: 9.5ms | ActiveRecord: 0.2ms | Allocations: 5587)
+
+
+Started GET "/users" for ::1 at 2020-09-27 21:11:04 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:4
+  Rendered users/index.html.erb within layouts/application (Duration: 30.9ms | Allocations: 15214)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:38
+Completed 200 OK in 39ms (Views: 36.6ms | ActiveRecord: 0.6ms | Allocations: 20878)
+
+
+Started GET "/users/sign_out" for ::1 at 2020-09-27 21:11:23 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_out"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 83)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:38
+Completed 200 OK in 6ms (Views: 4.7ms | ActiveRecord: 0.1ms | Allocations: 3563)
+
+
+Started GET "/users/sign_out" for ::1 at 2020-09-27 21:13:20 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_out"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 80)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:38
+Completed 500 Internal Server Error in 381ms (ActiveRecord: 0.1ms | Allocations: 192940)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `destroy_user_session' for #<#<Class:0x00007fc2fcf2fdc0>:0x00007fc2fcf2e510>
+Did you mean?  destroy_user_session_url
+               destroy_user_session_path):
+    54:                   <%# <%= link_to "マイページ", user_path(current_user), class: "button is-warning is-light" %>
+    55:                 </p>
+    56:                 <p class="control">
+    57:                   <%= link_to "ログアウト", destroy_user_session, method: :delete, class: "button is-warning is-light" %>
+    58:                 </p>
+    59:               </div>
+    60:             </div>
+  
+app/views/layouts/application.html.erb:57
+Started GET "/users/sign_out" for ::1 at 2020-09-27 21:14:11 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_out"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 80)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:38
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.1ms | Allocations: 4997)
+
+
+Started GET "/users/sign_out" for ::1 at 2020-09-27 21:14:42 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_out"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 329.5ms | Allocations: 185606)
+Completed 500 Internal Server Error in 333ms (ActiveRecord: 0.0ms | Allocations: 186905)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `resource' for #<#<Class:0x00007fc2ff5439a8>:0x00007fc2ff541b30>
+Did you mean?  rescue):
+    13:     <div class="columns is-centered">
+    14:       <div class="column is-5">
+    15: 
+    16:         <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+    17:           <div class="field">
+    18:             <%= f.label :email, class: "label" %>
+    19:             <p class="control has-icons-left">
+  
+app/views/users/show.html.erb:16
+Started GET "/users/sign_out" for ::1 at 2020-09-27 21:15:03 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_out"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 80)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:38
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.1ms | Allocations: 4911)
+
+
+Started GET "/users/sign_out" for ::1 at 2020-09-27 21:15:05 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_out"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:38
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.1ms | Allocations: 3333)
+
+
+Started GET "/users" for ::1 at 2020-09-27 21:16:07 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:4
+  Rendered users/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1363)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:38
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.2ms | Allocations: 4756)
+
+
+Started GET "/users" for ::1 at 2020-09-27 21:16:50 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:14
+  Rendered users/index.html.erb within layouts/application (Duration: 5.2ms | Allocations: 4927)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.1ms | Allocations: 6237)
+
+
+  
+ActionView::Template::Error (The asset "no-image.png" is not present in the asset pipeline.
+):
+    18:               <div class="card-image">
+    19:                 <figure class="image">
+    20:                   <%= link_to user_path(user) do %>
+    21:                     <%= attachment_image_tag user, :profile_image, fallback: "no-image.png" %>
+    22:                   <% end %>
+    23:                 </figure>
+    24:               </div>
+  
+app/views/users/index.html.erb:21
+app/views/users/index.html.erb:20
+app/views/users/index.html.erb:14
+Started GET "/users" for ::1 at 2020-09-27 21:17:02 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:14
+  Rendered users/index.html.erb within layouts/application (Duration: 9.0ms | Allocations: 4400)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.2ms | Allocations: 5716)
+
+
+  
+ActionView::Template::Error (undefined method `recipes' for #<User:0x00007fc300a50210>):
+    30:                 </div>
+    31:               </div>
+    32:               <div class="content">
+    33:                 投稿数：<%= user.recipes.count %>
+    34:               </div>
+    35:             </div>
+    36:           </div>
+  
+app/views/users/index.html.erb:33
+app/views/users/index.html.erb:14
+Started GET "/users" for ::1 at 2020-09-27 21:17:21 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:14
+  Rendered users/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1538)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:38
+Completed 200 OK in 10ms (Views: 8.6ms | ActiveRecord: 0.2ms | Allocations: 6281)
+
+
+Started GET "/users/1" for ::1 at 2020-09-27 21:17:27 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 80)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:38
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.2ms | Allocations: 3564)
+
+
+Started GET "/users" for ::1 at 2020-09-27 21:19:40 +0900
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:14
+  Rendered users/index.html.erb within layouts/application (Duration: 31.4ms | Allocations: 14642)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:38
+Completed 200 OK in 50ms (Views: 42.7ms | ActiveRecord: 1.3ms | Allocations: 21840)
+
+
+Started GET "/users/1" for ::1 at 2020-09-27 21:19:45 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 99)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:38
+Completed 200 OK in 7ms (Views: 5.0ms | ActiveRecord: 0.3ms | Allocations: 4293)
+
+
+Started GET "/users/" for ::1 at 2020-09-28 19:36:56 +0900
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:14
+  Rendered users/index.html.erb within layouts/application (Duration: 15.1ms | Allocations: 1317)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:38
+Completed 200 OK in 30ms (Views: 24.6ms | ActiveRecord: 0.8ms | Allocations: 4594)
+
+
+Started GET "/users/1" for ::1 at 2020-09-28 19:37:56 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 8)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:38
+Completed 200 OK in 8ms (Views: 5.2ms | ActiveRecord: 0.4ms | Allocations: 3935)
+
+
+Started GET "/users/1" for ::1 at 2020-09-28 19:38:40 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 24.6ms | Allocations: 6840)
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 0.2ms | Allocations: 8716)
+
+
+  
+ActionView::Template::Error (The asset "no-image.png" is not present in the asset pipeline.
+):
+    15:         <div class="columns is-centered">
+    16:           <div class="column is-4">
+    17:             <figure class="image is-128x128"  style="margin-left: auto; margin-right: auto;">
+    18:               <%= attachment_image_tag @user, :profile_image, fallback: "no-image.png", class: "profile_image is-rounded" %>
+    19:             </figure>
+    20:           </div>
+    21:           <div class="column is-8">
+  
+app/views/users/show.html.erb:18
+Started GET "/users/1" for ::1 at 2020-09-28 19:41:47 +0900
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 8.6ms | Allocations: 6706)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 1.0ms | Allocations: 18965)
+
+
+  
+ActionView::Template::Error (The asset "no-image.png" is not present in the asset pipeline.
+):
+    15:         <div class="columns is-centered">
+    16:           <div class="column is-4">
+    17:             <figure class="image is-128x128"  style="margin-left: auto; margin-right: auto;">
+    18:               <%= attachment_image_tag @user, :profile_image, fallback: "no-image.png", class: "profile_image is-rounded" %>
+    19:             </figure>
+    20:           </div>
+    21:           <div class="column is-8">
+  
+app/views/users/show.html.erb:18
+Started GET "/users/1" for ::1 at 2020-09-28 19:42:27 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:27
+  Rendered users/show.html.erb within layouts/application (Duration: 21.1ms | Allocations: 8240)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 0.5ms | Allocations: 10157)
+
+
+  
+ActionView::Template::Error (undefined method `recipes' for #<User:0x00007fef5059ecb8>):
+    51: <section class="section">
+    52:   <div class="container">
+    53:     <div class="columns is-multiline">
+    54:       <% @user.recipes.each do |recipe| %>
+    55:         <div class="column is-4">
+    56:           <div class="card">
+    57:             <div class="card-image">
+  
+app/views/users/show.html.erb:54
+Started GET "/users/1/edit" for ::1 at 2020-09-28 19:47:13 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `edit'
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (Duration: 5.1ms | Allocations: 3837)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:38
+Completed 200 OK in 38ms (Views: 14.1ms | ActiveRecord: 1.4ms | Allocations: 18324)
+
+
+Started GET "/users/1/edit" for ::1 at 2020-09-28 19:48:04 +0900
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `edit'
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (Duration: 11.3ms | Allocations: 3937)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:38
+Completed 200 OK in 22ms (Views: 19.8ms | ActiveRecord: 0.2ms | Allocations: 9312)
+
+
+Started GET "/users/1/edit" for ::1 at 2020-09-28 19:49:11 +0900
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `edit'
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (Duration: 7.8ms | Allocations: 3464)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:38
+Completed 200 OK in 16ms (Views: 14.7ms | ActiveRecord: 0.2ms | Allocations: 8832)
+
+
+Started PATCH "/users/1" for ::1 at 2020-09-28 19:53:27 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#update as HTML
+  Parameters: {"authenticity_token"=>"narOsTypMMzJjBjHhq37i+/Phauoxp9k8EyPXGalsmtsFjzc1klRoLnwEON3coZ6l43+VFv/t/yWpMegwBvvZg==", "user"=>{"username"=>"kensuke", "email"=>"test@gmail.com", "profile"=>"昔から料理が好きです。\r\n", "profile_image"=>#<ActionDispatch::Http::UploadedFile:0x00007fef5266a910 @tempfile=#<Tempfile:/var/folders/6b/0v0tfs4j1lx1gsf6k995br7w0000gn/T/RackMultipart20200928-14136-v8gbkw.jpeg>, @original_filename="プロフ写真.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"user[profile_image]\"; filename=\"\xE3\x83\x95\xE3\x82\x9A\xE3\x83\xAD\xE3\x83\x95\xE5\x86\x99\xE7\x9C\x9F.jpeg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"更新", "id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15:in `update'
+[31mUnpermitted parameter: :profile_image[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:16:in `update'
+  [1m[36mUser Update (5.5ms)[0m  [1m[33mUPDATE "users" SET "profile" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["profile", "昔から料理が好きです。\r\n"], ["updated_at", "2020-09-28 10:53:27.517689"], ["id", 1]]
+  ↳ app/controllers/users_controller.rb:16:in `update'
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:16:in `update'
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 25ms (ActiveRecord: 7.3ms | Allocations: 12612)
+
+
+Started GET "/users/1" for ::1 at 2020-09-28 19:53:27 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:27
+  Rendered users/show.html.erb within layouts/application (Duration: 11.2ms | Allocations: 5076)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.3ms | Allocations: 6379)
+
+
+  
+ActionView::Template::Error (undefined method `recipes' for #<User:0x00007fef51d66760>):
+    51: <section class="section">
+    52:   <div class="container">
+    53:     <div class="columns is-multiline">
+    54:       <% @user.recipes.each do |recipe| %>
+    55:         <div class="column is-4">
+    56:           <div class="card">
+    57:             <div class="card-image">
+  
+app/views/users/show.html.erb:54
+Started GET "/users/1" for ::1 at 2020-09-28 19:54:35 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 1370)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.2ms | Allocations: 3217)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <section class="hero is-success">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title">
+        マイページ
+      </h1>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="columns is-centered">
+          <div class="column is-4">
+            <figure class="image is-128x128"  style="margin-left: auto; margin-right: auto;">
+              <%= attachment_image_tag @user, :profile_image, fallback: "noimage.png", class: "profile_image is-rounded" %>
+            </figure>
+          </div>
+          <div class="column is-8">
+            <table class="table is-fullwidth">
+              <tr>
+                <td class="is-size-4">
+                  <strong><%= @user.username %></strong>
+                </td>
+                <% if @user.id == current_user.id %>
+                <td class="is-size-4">
+                  <%= @user.email %>
+                </td>
+                <td>
+                    <%= link_to "編集", edit_user_path(@user), class: "button is-primary" %>
+                </td>
+                <% end %>
+              </tr>
+            </table>
+            <table class="table is-fullwidth">
+              <tr>
+                <td>
+                  <%= @user.profile %>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+            <div class="card-content">
+              <div class="media">
+                <div class="media-content">
+                  <%= link_to recipe_path(recipe), class: "panel-block" do %>
+                    <span class="panel-icon">
+                      <i class="fas fa-book" aria-hidden="true"></i>
+                    </span>
+                    このレシピを見る
+                  <% end %>
+                  <% if @user.id == current_user.id %>
+                    <%= link_to edit_recipe_path(recipe), class: "panel-block" do %>
+                      <span class="panel-icon">
+                        <i class="fas fa-edit"></i>
+                      </span>
+                      このレシピを編集する
+                    <% end %>
+                    <%= link_to recipe_path(recipe), method: :delete, data: {confirm: "削除しますか？"}, class: "panel-block" do %>
+                      <span class="panel-icon">
+                        <i class="fas fa-trash"></i>
+                      </span>
+                      このレシピを削除する
+                    <% end %>
+                  <% end %>
+                </div>
+              </div>
+              <div class="content">
+                <time><%= recipe.updated_at.strftime("%Y-%m-%d %H:%M") %></time>更新
+              </div>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</section>
+
+):
+1:    <section class="hero is-success">
+2:      <div class="hero-body">
+3:        <div class="container">
+4:          <h1 class="title">
+5:            マイページ
+6:          </h1>
+7:        </div>
+8:      </div>
+9:    </section>
+10:    
+11:    <section class="section">
+12:      <div class="container">
+13:        <div class="columns is-centered">
+14:          <div class="column is-8">
+15:            <div class="columns is-centered">
+16:              <div class="column is-4">
+17:                <figure class="image is-128x128"  style="margin-left: auto; margin-right: auto;">
+18:                  <%= attachment_image_tag @user, :profile_image, fallback: "noimage.png", class: "profile_image is-rounded" %>
+19:                </figure>
+20:              </div>
+21:              <div class="column is-8">
+22:                <table class="table is-fullwidth">
+23:                  <tr>
+24:                    <td class="is-size-4">
+25:                      <strong><%= @user.username %></strong>
+26:                    </td>
+27:                    <% if @user.id == current_user.id %>
+28:                    <td class="is-size-4">
+29:                      <%= @user.email %>
+30:                    </td>
+31:                    <td>
+32:                        <%= link_to "編集", edit_user_path(@user), class: "button is-primary" %>
+33:                    </td>
+34:                    <% end %>
+35:                  </tr>
+36:                </table>
+37:                <table class="table is-fullwidth">
+38:                  <tr>
+39:                    <td>
+40:                      <%= @user.profile %>
+41:                    </td>
+42:                  </tr>
+43:                </table>
+44:              </div>
+45:            </div>
+46:          </div>
+47:        </div>
+48:      </div>
+49:    </section>
+50:    
+51:    <section class="section">
+52:      <div class="container">
+53:                <div class="card-content">
+54:                  <div class="media">
+55:                    <div class="media-content">
+56:                      <%= link_to recipe_path(recipe), class: "panel-block" do %>
+57:                        <span class="panel-icon">
+58:                          <i class="fas fa-book" aria-hidden="true"></i>
+59:                        </span>
+60:                        このレシピを見る
+61:                      <% end %>
+62:                      <% if @user.id == current_user.id %>
+63:                        <%= link_to edit_recipe_path(recipe), class: "panel-block" do %>
+64:                          <span class="panel-icon">
+65:                            <i class="fas fa-edit"></i>
+66:                          </span>
+67:                          このレシピを編集する
+68:                        <% end %>
+69:                        <%= link_to recipe_path(recipe), method: :delete, data: {confirm: "削除しますか？"}, class: "panel-block" do %>
+70:                          <span class="panel-icon">
+71:                            <i class="fas fa-trash"></i>
+72:                          </span>
+73:                          このレシピを削除する
+74:                        <% end %>
+75:                      <% end %>
+76:                    </div>
+77:                  </div>
+78:                  <div class="content">
+79:                    <time><%= recipe.updated_at.strftime("%Y-%m-%d %H:%M") %></time>更新
+80:                  </div>
+81:                </div>
+82:              </div>
+83:            </div>
+84:          <% end %>
+85:        </div>
+86:      </div>
+87:    </section>
+  
+app/views/users/show.html.erb:90: syntax error, unexpected end, expecting end-of-input
+app/views/users/show.html.erb:90: syntax error, unexpected end, expecting end-of-input
+app/views/users/show.html.erb:90: syntax error, unexpected end, expecting end-of-input
+app/views/users/show.html.erb:90: syntax error, unexpected end, expecting end-of-input
+app/views/users/show.html.erb:90: syntax error, unexpected end, expecting end-of-input
+app/views/users/show.html.erb:90: syntax error, unexpected end, expecting end-of-input
+Started GET "/users/1" for ::1 at 2020-09-28 19:55:05 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:27
+  Rendered users/show.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1805)
+Completed 200 OK in 11ms (Views: 9.3ms | ActiveRecord: 0.3ms | Allocations: 6209)
+
+
+Started GET "/users/1/edit" for ::1 at 2020-09-28 19:55:11 +0900
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `edit'
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1063)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:38
+Completed 200 OK in 9ms (Views: 6.8ms | ActiveRecord: 0.2ms | Allocations: 5093)
+
+
+Started PATCH "/users/1" for ::1 at 2020-09-28 19:55:17 +0900
+Processing by UsersController#update as HTML
+  Parameters: {"authenticity_token"=>"jxfJUOaWTuCx+DFCG5F9inVNNRST6Dk6b3UQIcLCl6h+qzs9DHYvjMGEOWbqTgB7DQ9O62DREaIJnVjdZHzKpQ==", "user"=>{"username"=>"kensuke", "email"=>"test@gmail.com", "profile"=>"昔から料理が好きです。\r\n", "profile_image"=>#<ActionDispatch::Http::UploadedFile:0x00007fef5274a128 @tempfile=#<Tempfile:/var/folders/6b/0v0tfs4j1lx1gsf6k995br7w0000gn/T/RackMultipart20200928-14136-1yq5t7j.jpeg>, @original_filename="プロフ写真.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"user[profile_image]\"; filename=\"\xE3\x83\x95\xE3\x82\x9A\xE3\x83\xAD\xE3\x83\x95\xE5\x86\x99\xE7\x9C\x9F.jpeg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"更新", "id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15:in `update'
+[31mUnpermitted parameter: :profile_image[0m
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms | Allocations: 1350)
+
+
+Started GET "/users/1" for ::1 at 2020-09-28 19:55:17 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:27
+  Rendered users/show.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1550)
+Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.2ms | Allocations: 4468)
+
+
+Started GET "/users/1" for ::1 at 2020-09-28 19:56:48 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:27
+  Rendered users/show.html.erb within layouts/application (Duration: 3.4ms | Allocations: 1796)
+Completed 200 OK in 11ms (Views: 8.8ms | ActiveRecord: 0.3ms | Allocations: 6183)
+
+
+Started GET "/users/1" for ::1 at 2020-09-28 19:56:49 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:27
+  Rendered users/show.html.erb within layouts/application (Duration: 13.4ms | Allocations: 1552)
+Completed 200 OK in 17ms (Views: 15.7ms | ActiveRecord: 0.3ms | Allocations: 4447)
+
+
+Started GET "/users/1" for ::1 at 2020-09-28 19:59:39 +0900
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:27
+  Rendered users/show.html.erb within layouts/application (Duration: 45.4ms | Allocations: 11980)
+Completed 200 OK in 71ms (Views: 55.1ms | ActiveRecord: 0.9ms | Allocations: 26957)
+
+
+Started GET "/users/1/edit" for ::1 at 2020-09-28 19:59:42 +0900
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `edit'
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (Duration: 5.0ms | Allocations: 1653)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:38
+Completed 200 OK in 11ms (Views: 9.2ms | ActiveRecord: 0.2ms | Allocations: 5703)
+
+
+Started PATCH "/users/1" for ::1 at 2020-09-28 19:59:49 +0900
+Processing by UsersController#update as HTML
+  Parameters: {"authenticity_token"=>"v8APrQelONBRh7oq3t70aD1tCYvjgR0JxFtG8qH9yr9OfP3A7UVZvCH7sg4vAYmZRS9ydBC4NZGisw4OB0OXsg==", "user"=>{"username"=>"kensuke", "email"=>"test@gmail.com", "profile"=>"昔から料理が好きです。\r\n", "profile_image"=>#<ActionDispatch::Http::UploadedFile:0x00007f9042d53480 @tempfile=#<Tempfile:/var/folders/6b/0v0tfs4j1lx1gsf6k995br7w0000gn/T/RackMultipart20200928-14673-1k22poz.jpeg>, @original_filename="プロフ写真.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"user[profile_image]\"; filename=\"\xE3\x83\x95\xE3\x82\x9A\xE3\x83\xAD\xE3\x83\x95\xE5\x86\x99\xE7\x9C\x9F.jpeg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"更新", "id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15:in `update'
+[31mUnpermitted parameter: :profile_image[0m
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms | Allocations: 1726)
+
+
+Started GET "/users/1" for ::1 at 2020-09-28 19:59:49 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:27
+  Rendered users/show.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1554)
+Completed 200 OK in 7ms (Views: 5.2ms | ActiveRecord: 0.3ms | Allocations: 4469)
+
+
+Started GET "/users/1" for ::1 at 2020-09-28 20:00:42 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:27
+  Rendered users/show.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1795)
+Completed 200 OK in 13ms (Views: 10.8ms | ActiveRecord: 0.2ms | Allocations: 6200)
+
+
+Started GET "/users/1" for ::1 at 2020-09-28 20:00:43 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:27
+  Rendered users/show.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1554)
+Completed 200 OK in 7ms (Views: 5.3ms | ActiveRecord: 0.2ms | Allocations: 4469)
+
+
+Started GET "/users/1" for ::1 at 2020-09-28 20:03:29 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:27
+  Rendered users/show.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1795)
+Completed 200 OK in 11ms (Views: 8.7ms | ActiveRecord: 0.3ms | Allocations: 6222)
+
+
+Started GET "/users" for ::1 at 2020-09-28 20:03:31 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:14
+  Rendered users/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1589)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:38
+Completed 200 OK in 9ms (Views: 7.1ms | ActiveRecord: 0.4ms | Allocations: 5022)
+
+
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateRecipes (20200928110557)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "recipes" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "title" varchar, "body" text, "image_id" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200928110557"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
